@@ -12,9 +12,9 @@
     <!-- Logo -->
     <ImageView
         android:id="@+id/imgLogo"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:layout_marginTop="40dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="25dp"
         android:src="@drawable/smp_logo"
         android:contentDescription="SMP²Kart Logo" />
 
@@ -22,37 +22,39 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="8dp"
         android:text="SMP²Kart"
-        android:textSize="32sp"
+        android:textSize="30sp"
         android:textStyle="bold"
         android:textColor="#1B5E20" />
 
-    <!-- Tagline -->
+    <!-- Title -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:text="Fresh Groceries. Smart Shopping."
-        android:textSize="15sp"
-        android:textColor="#4E6B50" />
-
-    <!-- Login Title -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="35dp"
-        android:text="Login to your Account"
-        android:textSize="20sp"
+        android:layout_marginTop="25dp"
+        android:text="Create Account"
+        android:textSize="22sp"
         android:textStyle="bold"
         android:textColor="#1B5E20" />
+
+    <!-- Name -->
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:hint="Full Name"
+        android:inputType="textPersonName"
+        android:padding="15dp"
+        android:background="@drawable/edittextshape" />
 
     <!-- Email -->
     <EditText
         android:id="@+id/etEmail"
         android:layout_width="match_parent"
         android:layout_height="55dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="12dp"
         android:hint="Email"
         android:inputType="textEmailAddress"
         android:padding="15dp"
@@ -63,32 +65,42 @@
         android:id="@+id/etPassword"
         android:layout_width="match_parent"
         android:layout_height="55dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="12dp"
         android:hint="Password"
         android:inputType="textPassword"
         android:padding="15dp"
         android:background="@drawable/edittextshape" />
 
-    <!-- Login Button -->
+    <!-- Confirm Password -->
+    <EditText
+        android:id="@+id/etConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="12dp"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        android:background="@drawable/edittextshape" />
+
+    <!-- Sign Up Button -->
     <Button
-        android:id="@+id/btnLogin"
+        android:id="@+id/btnSignup"
         android:layout_width="200dp"
         android:layout_height="55dp"
-        android:layout_marginTop="25dp"
-        android:text="LOGIN"
+        android:layout_marginTop="20dp"
+        android:text="SIGN UP"
         android:textSize="17sp"
         android:textStyle="bold"
         android:textColor="#FFFFFF"
         android:background="@drawable/greenbuttongradient" />
 
-    <!-- Sign Up -->
-
+    <!-- Login -->
     <TextView
-        android:id="@+id/tvSignup"
+        android:id="@+id/tvLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Don't have an Account? Sign Up"
+        android:layout_marginTop="18dp"
+        android:text="Already have an Account? Login"
         android:textSize="15sp"
         android:textStyle="bold"
         android:textColor="#1B5E20"

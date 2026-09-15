@@ -1,8 +1,10 @@
 package com.example.smp2kart;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -18,6 +20,17 @@ public class LoginActivity extends AppCompatActivity {
 
         // Connect Java with XML
         setContentView(R.layout.activity_login);
+        TextView tvSignup = findViewById(R.id.tvSignup);
+
+        tvSignup.setOnClickListener(v -> {
+
+            Intent intent = new Intent(
+                    LoginActivity.this,
+                    SignupActivity.class
+            );
+
+            startActivity(intent);
+        });
 
         // Connect XML components
         etEmail = findViewById(R.id.etEmail);
