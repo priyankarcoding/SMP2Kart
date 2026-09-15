@@ -11,7 +11,7 @@
         android:id="@+id/imgLogo"
         android:layout_width="180dp"
         android:layout_height="180dp"
-        android:contentDescription="SMP²Kart Logo change"
+        android:contentDescription="SMP²Kart Logo "
         android:src="@drawable/smp_logo" />
 
     <TextView
